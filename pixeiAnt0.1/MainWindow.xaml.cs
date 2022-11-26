@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,8 +27,11 @@ namespace pixeiAnt0._1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        public void NewFileOpener(object sender, RoutedEventArgs e)
         {
+            NewFileOpenerWindow newFileOpenerWindow = new NewFileOpenerWindow();
+            newFileOpenerWindow.Show();
 
         }
 
