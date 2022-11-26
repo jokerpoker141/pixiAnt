@@ -1,0 +1,122 @@
+﻿<Window x:Class="pixeiAnt0._1.Drawing_Windows.MainDrawingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pixeiAnt0._1.Drawing_Windows"
+        mc:Ignorable="d"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        Background="#227c87"
+
+        Title="MainDrawingWindow" 
+        MinHeight="720" MinWidth="1280">
+
+
+    <Window.Resources>
+
+        <System:Double x:Key="ButtonMinHeigth">25</System:Double>
+        <System:Double x:Key="ButtonMinwith">100</System:Double>
+        <System:Double x:Key="FontSize">18</System:Double>
+
+        <!--Basic Text-->
+        <Style TargetType="TextBlock">
+            <Setter Property="TextElement.FontFamily" Value="assets\fonts\#redensek"/>
+            <Setter Property="Margin" Value="7,0,7,0"/>
+
+            <Setter Property="TextElement.FontFamily" Value="assets\fonts\#redensek"/>
+            <Setter Property="TextElement.FontSize" Value="{StaticResource FontSize}"/>
+            <Setter Property="Foreground" Value="White" />
+
+        </Style>
+
+
+        <!--basic button-->
+
+        <Style TargetType="Button">
+            <Setter Property="MinWidth"  Value="{StaticResource ButtonMinHeigth}"/>
+            <Setter Property="MinHeight" Value="{StaticResource ButtonMinHeigth}"/>
+
+            <Setter Property="TextElement.FontFamily" Value="assets\fonts\#redensek"/>
+            <Setter Property="TextElement.FontSize" Value="{StaticResource FontSize}"/>
+
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="#1a2b42"/>
+
+
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+
+
+            <Setter Property="TextElement.Background" Value="White"/>
+
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="Red"/>
+                </Trigger>
+            </Style.Triggers>
+
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="#1a2b42"/>
+            <Setter Property="BorderThickness" Value="4"/>
+
+            <Setter Property="TextElement.FontFamily" Value="assets\fonts\#redensek"/>
+            <Setter Property="TextElement.FontSize" Value="15"/>
+
+
+        </Style>
+
+
+
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition MaxWidth="100"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GridSplitter ResizeDirection="Columns" 
+                      Grid.Row="0" Grid.RowSpan="3" BorderBrush="#1c5f6d"
+                      BorderThickness="3"/>
+
+        <GridSplitter Grid.Row="1" Grid.Column="1" Height="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
+
+        <TextBlock Text="Main Editing" Grid.Row="1" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <TextBlock Text="Keyframe..." Grid.Row="2" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+
+        <Grid Grid.Row="0"
+              Grid.RowSpan="3">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <GridSplitter Grid.Row="0" Grid.Column="1" Height="3" Grid.ColumnSpan="2" 
+                          HorizontalAlignment="Stretch" VerticalAlignment="Bottom"
+                          Background="Coral"/>
+
+            <TextBlock Text="Color Pallette" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+
+            <TextBlock Text="Colors" Grid.Row="0"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        </Grid>
+        
+    </Grid>
+</Window>

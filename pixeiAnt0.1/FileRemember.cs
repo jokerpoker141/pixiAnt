@@ -8,27 +8,27 @@ using System.Windows.Controls;
 
 namespace pixeiAnt0._1
 {
-    class FileRemember : ListBox
+    class FileRemember //: ListBox
     {
 
 
 
-        public layout Layout    
-        {
-            get { return (layout)GetValue(ViewLayoutProperty); }
-            set { SetValue(ViewLayoutProperty, value); }
-        }
+        //    public layout Layout    
+        //    {
+        //        get { return (layout)GetValue(ViewLayoutProperty); }
+        //        set { SetValue(ViewLayoutProperty, value); }
+        //    }
 
-        // Using a DependencyProperty as the backing store for Layout.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty ViewLayoutProperty =
-            DependencyProperty.Register("Layout", typeof(layout), typeof(FileRemember), new PropertyMetadata(layout.list));
+        //    // Using a DependencyProperty as the backing store for Layout.  This enables animation, styling, binding, etc...
+        //    public static readonly DependencyProperty ViewLayoutProperty =
+        //        DependencyProperty.Register("Layout", typeof(layout), typeof(FileRemember), new PropertyMetadata(layout.list));
 
-        // https://www.youtube.com/watch?v=SOD3hF1T49U tutorialindan gecmis dosyalari gormek icin takip et
-    }
+        //    // https://www.youtube.com/watch?v=SOD3hF1T49U tutorialindan gecmis dosyalari gormek icin takip et
+        //}
 
-    public enum layout
-    {
-        Tile,
-        list
+        //public enum layout
+        //{
+        //    Tile,
+        //    list
     }
 }

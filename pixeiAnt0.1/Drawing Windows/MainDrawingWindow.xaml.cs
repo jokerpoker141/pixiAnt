@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,30 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace pixeiAnt0._1
+namespace pixeiAnt0._1.Drawing_Windows
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainDrawingWindow.xaml
     /// </summary>
-
-    public partial class MainWindow : Window
+    public partial class MainDrawingWindow : Window
     {
-        public MainWindow()
+        public MainDrawingWindow()
         {
             InitializeComponent();
         }
-
-
-        public void NewFileOpener(object sender, RoutedEventArgs e)
-        {
-            NewFileOpenerWindow newFileOpenerWindow = new NewFileOpenerWindow();
-            newFileOpenerWindow.Show();
-
-        }
-
-
     }
 }

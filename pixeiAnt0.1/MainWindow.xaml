@@ -114,7 +114,8 @@
             <Button        Grid.Column="1"
 						   Grid.Row="0"
 						   HorizontalAlignment="Left"
-                           Content=" New File "/>
+                           Content=" New File" 
+                           Click="NewFileOpener"/>
 
 
 
@@ -135,8 +136,10 @@
 
         </Grid>
         <ListBox Grid.Row="1" 
-                 d:ItemsSource="{d:SampleData ItemCount=5}" 
-                 SelectionChanged="ListBox_SelectionChanged"/>
+                 d:ItemsSource="{d:SampleData ItemCount=5}" />
+        
+        
+        <!-- SelectionChanged="ListBox_SelectionChanged" --> 
 
         <!--
         <DockPanel Grid.Column="0" Grid.Row="1" Margin="25,10,25,0" Background="#1f6d7a"
