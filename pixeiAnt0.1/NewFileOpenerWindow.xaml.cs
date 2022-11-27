@@ -24,7 +24,7 @@ namespace pixeiAnt0._1
     public partial class NewFileOpenerWindow : Window
     {
         public int WindowWitdh { get; set; }
-        public int WindowHeigth { get; set; } 
+        public int WindowHeigth { get; set; }
 
         public NewFileOpenerWindow()
         {
